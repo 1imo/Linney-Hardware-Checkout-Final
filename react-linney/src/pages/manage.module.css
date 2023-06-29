@@ -1,0 +1,86 @@
+.page {
+    box-sizing: border-box;
+    padding: 80px calc(100vw / 12);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page > h2,
+.page > h4 {
+    color: white;
+    font-family: "Syncopate", sans-serif;
+    font-size: 40px;
+    /* height: 0px !important */
+    line-height: 100%;
+}
+
+.page > h4 {
+    font-size: 20px;
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+}
+
+.page > h4 > select {
+    height: 20px;
+    box-sizing: border-box;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    width: 100%;
+    font-size: 12.5px;
+    text-align:start
+}
+
+.page > h4 > select > option {
+    color: black;
+    border: none;
+    outline: none
+}
+
+.page > div > div > form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.page > div > div > form > h4 {
+    color: white;
+    font-size: 15px;
+}
+
+.page > div > div > form > input {
+    background: #191919;
+    border: none;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color: white;
+    font-size: 12.5px;
+    text-align: start;
+}
+
+.page > div > div > form > button {
+    height: 40px;
+    border: none;
+    font-size: 12.5px;
+    font-weight: 500;
+}
+.page > div > div > form > input::placeholder {
+    color: #fff;
+    font-weight: 300;
+    font-size: 12.5px;
+    text-align: start;
+}
+
+.page > div > div > div {
+    color: white
+}
+
+@media (orientation: portrait) {
+    .page {
+        padding: 80px 20px
+    }
+}

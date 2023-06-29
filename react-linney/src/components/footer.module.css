@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syncopate:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+    /* height: 100vh */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+    /* color: white */
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white
+}
+
+.page {
+    position: relative;
+    height: 100vh
+}
+
+.footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(0, 100vh);
+    width: 100vw;
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    padding: 40px calc(100vw/12);
+    box-sizing: border-box !important;
+    position: relative;
+    background-color: white;
+    color: black !important
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 15px;
+    color: black !important
+
+}
+
+.footer > div > a {
+    color: black !important
+
+}
+
+.footer > div > h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer > div:nth-child(1) {
+    /* background-color: black; */
+    align-items: flex-end;
+}

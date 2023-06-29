@@ -1,0 +1,58 @@
+.page {
+    padding: 80px calc(100vw / 24);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.crd {
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.details {
+    font-size: 40px;
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+    column-gap: 10px;
+    /* flex-direction: column; */
+    /* align-content: flex-end; */
+    /* align-self: flex-end; */
+    
+}
+
+.details > span {
+    font-size: 15px;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400;
+    /* height: fit-content; */
+}
+
+
+
+.crd > svg > path:nth-child(1) {
+    fill: none;
+    background-color: #191919;
+    /* padding: 10px; */
+}
+
+.crd > svg > path:nth-child(2) {
+    fill: #000!important;
+}
+
+@media (orientation: portrait) {
+   .page {
+    padding: 80px 20px;
+   }
+}

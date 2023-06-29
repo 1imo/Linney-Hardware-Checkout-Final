@@ -1,0 +1,152 @@
+.page {
+    position: relative;
+    height: 100vh;
+
+    box-sizing: border-box !important;
+    overflow: hidden;
+    
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.content > form {
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw / 12 * 4);
+    row-gap: 10px;
+    
+}
+
+.content > form > input {
+    box-sizing: border-box;
+    height: 40px;
+    background: #191919;
+    border: none;
+    color: white;
+    padding: 0 10px
+}
+
+.content > form > button {
+    height: 40px;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+
+
+}
+
+.content > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content > div > a {
+    color: black !important;
+}
+
+.first,
+.last {
+    width: calc(100vw / 12 * 4 / 2);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.first {
+    border: 2px solid white !important;
+}
+
+.last {
+    background-color: white;
+    color: black !important;
+}
+
+.content > div:nth-child(1),
+.content > form > div:nth-child(1) {
+    background: white;
+}
+
+.content > form > div:nth-child(1),
+.content > form > div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.content > input::placeholder {
+    color: white !important;
+    font-size: 15px;
+}
+
+.content > h2 {
+    color: white !important;
+    align-self: flex-start;
+    font-family: "Syncopate", sans-serif;
+    font-size: 40px;
+}
+
+.content > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content > div > a {
+    color: white !important;
+    width: calc(100vw / 12 * 2);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.content > div > a:nth-child(2) {
+    text-align: right;
+}
+
+.page > h2 {
+    color: white;
+    font-family: "Syncopate", sans-serif;
+    width: calc(100vw / 12 * 4);
+    padding-top: 40px;
+    font-size: 80px;
+}
+
+
+
+@media (orientation: portrait) {
+    .content {
+        width: calc(100vw - 40px);
+    }
+
+    .content > form {
+        width: 100%
+    }
+
+    .first,
+    .last {
+        width: calc(50vw - 20px) !important;
+    }
+
+    .page > h2 {
+        font-size: 40px;
+        width: calc(100vw - 40px);
+        box-sizing: border-box;
+        margin: 20px 20px 0;
+    }
+}

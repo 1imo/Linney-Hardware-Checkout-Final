@@ -1,0 +1,30 @@
+.crd {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 10px;
+    box-sizing: border-box !important;
+
+}
+
+.crd > h2 {
+    font-size: calc((100vh - 160px) / 3 - (20px / 3) - 25px);
+    font-weight: 500;
+}
+
+.crd > h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (orientation: portrait) {
+    .crd > h2 {
+        font-size: 40px
+    }
+
+    .crd {
+        height: max(60px, calc((100vh / 6))) !important
+    }
+  }

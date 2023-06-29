@@ -1,0 +1,86 @@
+.page > img {
+    width: 100vw;
+    aspect-ratio: auto;
+}
+
+.page > section {
+    color: white;
+    display: flex;
+    column-gap: 10px;
+    width: 100vw;
+    padding: 40px calc(100vw / 24);
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.page > section > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page > section > div > h2,
+.page > section > div > p,
+.page > section > div > h6  {
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.page > section > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.page > section > div > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.page > section > div > div > h2 {
+    font-family: "Syncopate", sans-serif;
+    font-size: 40px;
+}
+
+.page > section > div > div > h6 {
+    font-weight: 400;
+    font-size: 12.5px;
+}
+
+.page > section > div > p {
+    font-size: 15px;
+}
+
+.page > section > div:nth-child(2) {
+    display: flex;
+}
+
+.page > section > div:nth-child(2) > button,
+.page > section > div:nth-child(2) > input {
+    flex: 1;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.page > section > div:nth-child(2) > button {
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.page > section > div:nth-child(2) > input {
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: none;
+    border: 2px solid white;
+    font-size: 15px;
+    color: white;
+}
+
+.page > section > div:nth-child(2) > input::placeholder {
+    color: white;
+}
